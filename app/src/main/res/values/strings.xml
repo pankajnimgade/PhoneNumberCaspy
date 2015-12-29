@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PhoneNumber</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_un_used_phone">UnUsed Numbers</string>
+    <string name="title_activity_populate_phone_number">Create a Number</string>
+    <string name="title_activity_assign_to_customer">Assign Customer</string>
+    <string name="title_activity_customer">Customers</string>
+</resources>

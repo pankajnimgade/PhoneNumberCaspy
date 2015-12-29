@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nimgade.pk.mytestapplication" >
+
+    <application
+        android:name="classes.StartUp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.activities.storage.UnUsedPhoneActivity"
+            android:label="@string/title_activity_un_used_phone"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytestapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="app.activities.storage.PopulatePhoneNumberActivity"
+            android:label="@string/title_activity_populate_phone_number"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytestapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="app.activities.storage.AssignToCustomerActivity"
+            android:label="@string/title_activity_assign_to_customer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytestapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name="app.activities.storage.CustomerActivity"
+            android:label="@string/title_activity_customer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nimgade.pk.mytestapplication.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

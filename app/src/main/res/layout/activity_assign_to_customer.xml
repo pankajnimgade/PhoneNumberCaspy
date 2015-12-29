@@ -1,0 +1,101 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.activities.storage.AssignToCustomerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/my_custom_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name" />
+
+                <EditText
+                    android:id="@+id/AssignToCustomerActivity_Customer_Name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Customer Name"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/AssignToCustomerActivity_Phone_Number_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="-60dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Phone Number" />
+
+                    <ImageButton
+                        android:id="@+id/AssignToCustomerActivity_find_Phone_Number_ImageButton"
+                        style="?actionButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@android:drawable/ic_menu_search" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/AssignToCustomerActivity_Save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
